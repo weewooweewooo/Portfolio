@@ -19,6 +19,7 @@ import {
   FaGithub,
   FaGitlab,
 } from "react-icons/fa";
+import { JSX } from "react";
 
 const skillIcons: { [key: string]: JSX.Element } = {
   React: <FaReact />,
