@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen p-8 pb-20 gap-16 sm:p-20 font-[var(--font-geist-sans)] overflow-hidden">
       <main className="flex flex-col gap-8 items-center sm:items-start">
-        <h1 className="text-6xl font-bold">Hi, I'm Sean Lee</h1>
+        <h1 className="text-6xl font-bold">Hi, I&apos;m Sean Lee</h1>
         <p className="mt-4 text-lg opacity-60">
           You only live once, make it count.
         </p>
