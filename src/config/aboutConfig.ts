@@ -48,19 +48,23 @@ const aboutConfig = {
     },
     {
       title: "Optimized Inventory Management with Custom Plugins",
-      description: "Designed custom plugins for Kingdee Oppo, significantly improving inventory workflows and operational efficiency for businesses.",
+      description:
+        "Designed custom plugins for Kingdee Oppo, significantly improving inventory workflows and operational efficiency for businesses.",
     },
     {
       title: "API Integration Across Platforms",
-      description: "Seamlessly integrated RESTful APIs into multiple systems, enhancing data communication and ensuring smooth functionality across platforms.",
+      description:
+        "Seamlessly integrated RESTful APIs into multiple systems, enhancing data communication and ensuring smooth functionality across platforms.",
     },
     {
       title: "Improved Financial Operations with Xero Integration",
-      description: "Collaborated with accounting teams to integrate Xero into workflows, boosting financial reporting accuracy and streamlining processes.",
+      description:
+        "Collaborated with accounting teams to integrate Xero into workflows, boosting financial reporting accuracy and streamlining processes.",
     },
     {
       title: "Data Integration and Web Development",
-      description: "Implemented advanced data integration processes with Talend Open Studio and contributed to Angular-based web projects during an internship at Nirvana Asia Group.",
+      description:
+        "Implemented advanced data integration processes with Talend Open Studio and contributed to Angular-based web projects during an internship at Nirvana Asia Group.",
     },
   ],
 };

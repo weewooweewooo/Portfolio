@@ -20,7 +20,7 @@ import {
   FaGitlab,
 } from "react-icons/fa";
 
-const skillIcons = {
+const skillIcons: { [key: string]: JSX.Element } = {
   React: <FaReact />,
   "Next.js": <FaReact />,
   "Vue.js": <FaVuejs />,
@@ -109,7 +109,7 @@ export default function About() {
                           key={skillIndex}
                           className="flex items-center gap-2"
                         >
-                          {skillIcons[skill]} {skill}
+                          {skillIcons[skill as keyof typeof skillIcons]} {skill}
                         </li>
                       ))}
                     </ul>
