@@ -20,7 +20,7 @@ import {
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const [activeTab, setActiveTab] = useState<string>("frontend");
-  const { projects, loading } = useProjects();
+  const { projects } = useProjects();
 
   useEffect(() => {
     setMounted(true);
