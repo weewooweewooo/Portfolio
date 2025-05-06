@@ -12,7 +12,7 @@ const aboutConfig = {
     {
       title: "Zetpy",
       description: "Hybrid Full-Stack Developer",
-      date: "2022 - Present",
+      date: "2022 - 2025",
     },
     {
       title: "Nirvana Asia Group",
@@ -38,7 +38,7 @@ const aboutConfig = {
     database: ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
     devOps: ["AWS", "GitHub Actions", "GitLab CI/CD"],
     mobile: ["React Native", "Expo"],
-    other: ["Machine Learning", "Artificial Intelligence"],
+    AI: ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Computer Vision", "Natural Language Processing", "TensorFlow", "PyTorch"],
   },
   achievements: [
     {

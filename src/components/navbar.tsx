@@ -1,34 +1,48 @@
 "use client";
-import Link from "next/link";
+import { motion } from "framer-motion";
+import { useSection } from "./sections/sectionContext";
 
 export default function Navbar() {
+  const { activeSection } = useSection();
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const navItems = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+  ];
+
   return (
-    <nav className="w-full p-4 mt-3 text-white flex justify-center items-center">
+    <nav className="w-full p-4 text-white flex justify-center items-center">
       <ul className="flex justify-center items-center space-x-4">
-        <li>
-          <Link
-            href="/"
-            className="opacity-60 hover:opacity-100 hover:bg-gray-700 px-3 py-2 rounded transition duration-300"
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/about"
-            className="opacity-60 hover:opacity-100 hover:bg-gray-700 px-3 py-2 rounded transition duration-300"
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/projects"
-            className="opacity-60 hover:opacity-100 hover:bg-gray-700 px-3 py-2 rounded transition duration-300"
-          >
-            Projects
-          </Link>
-        </li>
+        {navItems.map((item) => (
+          <li key={item.id}>
+            <button
+              onClick={() => scrollToSection(item.id)}
+              className={`relative px-1 py-2 transition-colors ${
+                activeSection === item.id
+                  ? "text-foreground"
+                  : "text-foreground/50 hover:text-foreground/70"
+              }`}
+            >
+              {item.label}
+              {activeSection === item.id && (
+                <motion.div
+                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-foreground"
+                  layoutId="navbar-indicator"
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                />
+              )}
+            </button>
+          </li>
+        ))}
       </ul>
     </nav>
   );

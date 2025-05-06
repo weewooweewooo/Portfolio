@@ -1,6 +1,6 @@
 "use client";
 
-import aboutConfig from "../config/aboutConfig";
+import aboutConfig from "@/config/aboutConfig";
 import {
   FaBriefcase,
   FaTools,
