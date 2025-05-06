@@ -289,7 +289,7 @@ export default function Home() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Projects</h2>
-          <h3 className="text-xl opacity-70 mb-8">Some things I've built.</h3>
+          <h3 className="text-xl opacity-70 mb-8">Some things I&apos;ve built.</h3>
 
           <div className="grid gap-8 sm:grid-cols-2">
             {projects.map((project, i) => (
@@ -374,7 +374,7 @@ export default function Home() {
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Get In Touch</h2>
           <p className="opacity-70 mb-8">
-            I'm currently looking for new opportunities. If you have a project
+            I&apos;m currently looking for new opportunities. If you have a project
             in mind or just want to chat, feel free to reach out!
           </p>
 

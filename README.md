@@ -1,20 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Portfolio Website
+A modern, responsive portfolio website built with Next.js, React, TypeScript, and Tailwind CSS.
+
+## Features
+🌙 Dark/Light mode toggle
+📱 Fully responsive design
+🔄 Smooth animations with Framer Motion
+💻 Dynamic project showcase with GitHub API integration
+🛠️ Skills section with categorized technologies and icons
+📝 About section to highlight professional experience
+📊 Milestone/achievements showcase
+📬 Contact section
+
+## Tech Stack
+Framework: Next.js
+Language: TypeScript
+Styling: Tailwind CSS
+Animations: Framer Motion
+Icons: React Icons
+Deployment: Vercel
 
 ## Getting Started
+1. Clone the repository
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
 
-First, run the development server:
+2. Install dependencies
+npm install
+# or
+yarn install
 
-```bash
+3. Set up environment variables Create a .env.local file in the root directory:
+GITHUB_REPO_PERSONAL_ACCESS_TOKEN=your_github_token
+
+4. Run the development server
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open your browser Navigate to http://localhost:3000
 
 Check out [weewooweewooo.vercel.app](https://weewooweewooo.vercel.app)
 
