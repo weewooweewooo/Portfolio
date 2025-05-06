@@ -23,7 +23,7 @@ export function useProjects() {
 
         const projectsWithLanguages = await Promise.all(
           repos.map(async (repo: Project) => {
-            const langResponse = await fetch(repo.languages_url);
+            const langResponse = await fetch(repo.languages_url, { headers });
             const languagesData = await langResponse.json();
 
             return {
