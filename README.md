@@ -2,14 +2,14 @@
 A modern, responsive portfolio website built with Next.js, React, TypeScript, and Tailwind CSS.
 
 ## Features
-🌙 Dark mode
-📱 Fully responsive design
-🔄 Smooth animations with Framer Motion
-💻 Dynamic project showcase with GitHub API integration
-🛠️ Skills section with categorized technologies and icons
-📝 About section to highlight professional experience
-📊 Milestone/achievements showcase
-📬 Contact section
+- 🌙 Dark mode
+- 📱 Fully responsive design
+- 🔄 Smooth animations with Framer Motion
+- 💻 Dynamic project showcase with GitHub API integration
+- 🛠️ Skills section with categorized technologies and icons
+- 📝 About section to highlight professional experience
+- 📊 Milestone/achievements showcase
+- 📬 Contact section
 
 ## Tech Stack
 Framework: Next.js
