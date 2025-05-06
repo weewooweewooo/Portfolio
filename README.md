@@ -21,21 +21,27 @@ Deployment: Vercel
 
 ## Getting Started
 1. Clone the repository
+```
 git clone https://github.com/weewooweewooo/Portfolio.git
 cd portfolio
+```
 
 2. Install dependencies
+```
 npm install
 or
 yarn install
+```
 
 3. Set up environment variables Create a .env.local file in the root directory:
 GITHUB_REPO_PERSONAL_ACCESS_TOKEN=your_github_token
 
 4. Run the development server
+```
 npm run dev
 or
 yarn dev
+```
 
 5. Open your browser Navigate to http://localhost:3000
 
