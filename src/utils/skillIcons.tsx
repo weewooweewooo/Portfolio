@@ -16,7 +16,7 @@ import {
   SiOpenai, SiBlender, SiUnity, SiUnrealengine, SiJupyter, SiVercel,
   SiNetlify, SiHeroku, SiDigitalocean, SiAmazonec2, SiGooglecloud,
   SiNginx, SiApache, SiCplusplus, SiR, SiGo, SiRust, SiIntellijidea, SiTrello, SiPostman,
-  SiXero, SiQuickbooks, SiShopee
+  SiXero, SiQuickbooks, SiShopee, SiBulma, SiMariadb
 } from 'react-icons/si';
 
 import { VscAzure } from "react-icons/vsc";
@@ -25,7 +25,6 @@ import { TbBrandThreejs, TbBrandWebflow, TbBrandCSharp, TbBrandReactNative } fro
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { BsBox2HeartFill } from "react-icons/bs";
 import { TbSql } from "react-icons/tb";
-
 
 // Type definition for the skill icons mapping
 type SkillIconsType = {
@@ -46,6 +45,7 @@ const skillIcons: SkillIconsType = {
   Angular: <FaAngular className="text-red-500" />,
   Bootstrap: <FaBootstrap className="text-purple-500" />,
   "Tailwind CSS": <SiTailwindcss className="text-cyan-500" />,
+  Bulma: <SiBulma className="text-blue-500" />,
   Sass: <FaSass className="text-pink-500" />,
   "Material UI": <SiMui className="text-blue-500" />,
   "Chakra UI": <SiChakraui className="text-teal-500" />,
@@ -73,6 +73,7 @@ const skillIcons: SkillIconsType = {
   PostgreSQL: <SiPostgresql className="text-blue-600" />,
   MySQL: <SiMysql className="text-blue-800" />,
   SQL: <TbSql className="text-blue-600" />,
+  MariaDB: <SiMariadb className="text-blue-600" />,
   MongoDB: <SiMongodb className="text-green-500" />,
   Redis: <SiRedis className="text-red-500" />,
   SQLite: <SiSqlite className="text-blue-400" />,

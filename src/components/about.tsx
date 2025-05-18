@@ -12,6 +12,7 @@ import {
   FaServer,
   FaReact,
   FaPlug,
+  FaCss3Alt
 } from "react-icons/fa";
 
 export default function About({
@@ -273,6 +274,7 @@ export default function About({
                   <span className="flex items-center gap-2">
                     {category === "frontend" && <FaCode />}
                     {category === "backend" && <FaServer />}
+                    {category === "CSS" && <FaCss3Alt />}
                     {category === "database" && <FaDatabase />}
                     {category === "devOps" && <FaTools />}
                     {category === "mobile" && <FaReact />}

@@ -64,8 +64,9 @@ const aboutConfig = {
       "TypeScript",
     ],
     backend: ["Node.js", "Python", "Flask", "Java", "Django", "Laravel"],
-    database: ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
-    devOps: ["AWS", "GitHub Actions", "GitLab CI/CD"],
+    CSS: ["Tailwind CSS", "Bootstrap", "Bulma"],
+    database: ["MySQL", "PostgreSQL", "MongoDB", "MariaDB"],
+    devOps: ["AWS", "GitHub Actions", "GitLab CI/CD", "Vercel", "Docker"],
     mobile: ["React Native", "Expo"],
     AI: [
       "Machine Learning",
