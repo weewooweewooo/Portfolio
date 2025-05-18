@@ -20,6 +20,35 @@ const aboutConfig = {
       date: "2024",
     },
   ],
+  techStackTitle: "Tech Stack",
+  techStackIntro:
+    "Here's a summary of the tools and technologies I've worked with in real-world development. Level scores reflect hands-on usage, not just academic knowledge.",
+  techStack: {
+    backend: [
+      { name: "Laravel", level: 95 },
+      { name: "PHP", level: 90 },
+      { name: "SQL", level: 85 },
+    ],
+    frontend: [
+      { name: "Vue.js", level: 90 },
+      { name: "JavaScript", level: 85 },
+      { name: "HTML", level: 80 },
+      { name: "CSS", level: 80 },
+      { name: "TypeScript", level: 75 },
+    ],
+    integration: [
+      { name: "Shopee API", level: 90 },
+      { name: "Lazada API", level: 90 },
+      { name: "TikTok Shop API", level: 80 },
+      { name: "Xero API", level: 80 },
+      { name: "Quickbooks API", level: 80 },
+    ],
+    tools: [
+      { name: "Git", level: 85 },
+      { name: "Postman", level: 80 },
+      { name: "Vercel", level: 70 },
+    ],
+  },
   skillsTitle: "Skills",
   skillsIntro:
     "Throughout my journey, I've picked up a variety of skills that help me bring ideas to life. Here are some of the tools and technologies I've worked with.",
@@ -38,7 +67,15 @@ const aboutConfig = {
     database: ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
     devOps: ["AWS", "GitHub Actions", "GitLab CI/CD"],
     mobile: ["React Native", "Expo"],
-    AI: ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Computer Vision", "Natural Language Processing", "TensorFlow", "PyTorch"],
+    AI: [
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Deep Learning",
+      "Computer Vision",
+      "Natural Language Processing",
+      "TensorFlow",
+      "PyTorch",
+    ],
   },
   achievements: [
     {

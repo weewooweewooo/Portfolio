@@ -3,7 +3,7 @@ import {
   FaReact, FaNode, FaAngular, FaVuejs, FaPython, FaJava, FaPhp, FaLaravel,
   FaAws, FaDocker, FaGithub, FaGitlab, FaNpm, FaHtml5, FaCss3Alt,
   FaSass, FaJs, FaBootstrap, FaWordpress, FaDatabase, FaServer, FaTools,
-  FaJira, FaFigma, FaStripe, FaLinux, FaWindows, FaAppStoreIos, FaAndroid, FaCode
+  FaJira, FaFigma, FaStripe, FaLinux, FaWindows, FaAppStoreIos, FaAndroid, FaCode, FaTiktok
 } from 'react-icons/fa';
 
 import {
@@ -15,14 +15,17 @@ import {
   SiFlutter, SiSwift, SiKotlin, SiTensorflow, SiPytorch, SiScikitlearn,
   SiOpenai, SiBlender, SiUnity, SiUnrealengine, SiJupyter, SiVercel,
   SiNetlify, SiHeroku, SiDigitalocean, SiAmazonec2, SiGooglecloud,
-  SiNginx, SiApache, SiCplusplus, SiR,
-  SiGo, SiRust, SiIntellijidea, SiTrello
+  SiNginx, SiApache, SiCplusplus, SiR, SiGo, SiRust, SiIntellijidea, SiTrello, SiPostman,
+  SiXero, SiQuickbooks, SiShopee
 } from 'react-icons/si';
 
 import { VscAzure } from "react-icons/vsc";
 
 import { TbBrandThreejs, TbBrandWebflow, TbBrandCSharp, TbBrandReactNative } from 'react-icons/tb';
 import { BiLogoVisualStudio } from "react-icons/bi";
+import { BsBox2HeartFill } from "react-icons/bs";
+import { TbSql } from "react-icons/tb";
+
 
 // Type definition for the skill icons mapping
 type SkillIconsType = {
@@ -69,6 +72,7 @@ const skillIcons: SkillIconsType = {
   // Database
   PostgreSQL: <SiPostgresql className="text-blue-600" />,
   MySQL: <SiMysql className="text-blue-800" />,
+  SQL: <TbSql className="text-blue-600" />,
   MongoDB: <SiMongodb className="text-green-500" />,
   Redis: <SiRedis className="text-red-500" />,
   SQLite: <SiSqlite className="text-blue-400" />,
@@ -141,6 +145,7 @@ const skillIcons: SkillIconsType = {
   Jupyter: <SiJupyter className="text-orange-500" />,
   "VS Code": <BiLogoVisualStudio className="text-blue-500" />,
   "IntelliJ IDEA": <SiIntellijidea className="text-red-500" />,
+  "Postman": <SiPostman className="text-orange-500" />,
   
   // Fallbacks for categories
   Frontend: <FaCode className="text-blue-500" />,
@@ -149,6 +154,13 @@ const skillIcons: SkillIconsType = {
   DevOps: <FaTools className="text-gray-500" />,
   Mobile: <FaAppStoreIos />,
   AI: <SiOpenai />,
+
+  // Integrations
+  "Shopee API": <SiShopee className="text-orange-500" />,
+  "Lazada API": <BsBox2HeartFill className="text-pink-500" />,
+  "TikTok Shop API": <FaTiktok className="text-black dark:text-white" />,
+  "Xero API": <SiXero className="text-blue-600" />,
+  "Quickbooks API": <SiQuickbooks className="text-green-600" />
 };
 
 export default skillIcons;

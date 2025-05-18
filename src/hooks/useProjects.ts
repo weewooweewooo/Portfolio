@@ -6,11 +6,13 @@ export function useProjects() {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    const EXCLUDED_PROJECTS = ["Portfolio"];
+
     async function fetchProjects() {
       try {
         const headers = {
           Accept: "application/vnd.github.v3+json",
-          // Add your GitHub personal access token here
+          // Add your GitHub personal access token here (For myself only haha)
           Authorization: process.env.GITHUB_REPO_PERSONAL_ACCESS_TOKEN || "",
         };
 
@@ -21,8 +23,12 @@ export function useProjects() {
         );
         const repos = await response.json();
 
+        const filteredRepos = repos.filter(
+          (repo: Project) => !EXCLUDED_PROJECTS.includes(repo.name)
+        );
+
         const projectsWithLanguages = await Promise.all(
-          repos.map(async (repo: Project) => {
+          filteredRepos.map(async (repo: Project) => {
             const langResponse = await fetch(repo.languages_url, { headers });
             const languagesData = await langResponse.json();
 
@@ -33,7 +39,12 @@ export function useProjects() {
           })
         );
 
-        setProjects(projectsWithLanguages);
+        const sortedProjects = projectsWithLanguages.sort(
+          (a, b) =>
+            new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime()
+        );
+
+        setProjects(sortedProjects);
       } catch (error) {
         console.error("Error fetching projects:", error);
       } finally {

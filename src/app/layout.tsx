@@ -11,7 +11,7 @@ const ibmMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "weewooweewooo - Sean Lee",
   description: "Portfolio of Sean",
 };
 
